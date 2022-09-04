@@ -23,11 +23,16 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `5fcdg4jebvca`,
+        accessToken: `MBhZCAPTKGe4GI_z54g5PEVPUSnGbcTVRDy8Am6lelc`,
       },
     },
   ],
