@@ -1,29 +1,28 @@
 import * as React from "react"
 import { Link } from "gatsby"
-// import Favicon from '../images/favicon.png'
 
 const Header = () => (
-  <nav>
-    {/* <Link
-      to="/"
-    >
-      <img
-        alt="DTK"
-        height={75}
-        src={Favicon}
-      />
-    </Link> */}
-
+  <nav className="nav">
     <Link to="/">
       Home
     </Link>
 
-    <Link>
-      Products
+    <Link to="/store">
+      Store
     </Link>
 
-    <Link>
+    <Link to="/courses">
       Courses
+    </Link>
+    
+    <Link to="/signup">
+      Sign Up
+    </Link>
+
+    <span>|</span>
+
+    <Link to="/login">
+       Login 
     </Link>
   </nav>
 )

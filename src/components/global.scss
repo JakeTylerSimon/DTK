@@ -1,0 +1,324 @@
+.app {
+    background: rgb(67,67,67);
+    background: linear-gradient(212deg, rgba(67,67,67,1) 23%, rgba(0,0,0,1) 82%);
+
+    padding: 20px 100px;
+}
+
+.nav {
+    margin: auto;
+    display: flex;
+    max-width: 400px;
+    justify-content: space-between;
+    color: white;
+    font-size: 18px;
+    
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: overline;
+        color: white
+    }
+}
+
+.moon-icon {
+    position: absolute;
+    right: 5%;
+    width: 9%;
+}
+
+.carousel {
+    .carousel-control-next, .carousel-control-prev {
+        display: none;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+
+}
+
+.carousel::before {
+    content:"";
+    background-image: url('../images/cloudOne.png');
+    height: 30%;
+    width: 20%;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 3;
+
+    animation: mymove 10s ease-in-out infinite;
+    animation-direction: alternate;
+    @keyframes mymove {
+        from { right: 20px}
+        to { right: 60px}
+    }
+}
+
+.joinNow {
+    border: none;
+    margin: auto;
+    display: flex;
+    color: white;
+    background: teal;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.joinNow:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  }
+
+//Store.js
+.store-wrapper{
+    padding-bottom: 128px;
+    .storeNav{
+      background: #ECF6FA;
+      padding: 75px 150px 0px;
+        margin-top: 25px;
+      background-image: url(/images/cloud_large.png), url(/images/cloud_large.png);
+      background-repeat: no-repeat;
+      background-size: 311px auto, 175px auto;
+      // width: 100%;
+      background-position: left;
+      animation: blogmove 16s ease-in-out infinite;
+      animation-direction: alternate;
+      @keyframes blogmove {
+        from { background-position: 40% 33px, 80% 44px;}
+        to { background-position: 30% 33px, 70% 44px; }
+      }
+      .navContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1110px;
+        margin: auto;
+        h4{
+          font-family: 'Hind';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 32px;
+          color: #242424;
+          margin-bottom: 0;
+        }
+        .dropdownMenu {
+          display: none;
+        }
+        .storeLinks{
+          span{
+            margin-left: 40px;
+            font-family: 'Hind';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            color: #242424;
+            cursor: pointer;
+          }
+          .active-tab{
+            padding-bottom: 5px;
+            border-bottom: 2px solid teal;
+            color: teal;
+          }
+        }
+      }
+    }
+    .storeList{
+        padding: 63px 126px;
+        max-width: 1440px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .article-wrapper {
+          margin: auto;
+          // justify-content: space-between;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .blog-articles {
+          margin-bottom: 64px;
+            display: flex;
+            flex-direction: column;
+            width: 31%;
+            margin-left: 12px;
+            margin-right: 12px;
+          .mainImg{
+            width: 100%;
+            margin-bottom: 18px;
+          }
+          .title{
+            font-family: 'Hind';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            margin-top: 12px;
+            margin-bottom: 14px;
+            text-decoration: none;
+            color: #242424;
+            line-height: 40px;
+            cursor: pointer;
+          }
+          .title:hover{
+            text-decoration-line: underline;
+            color: teal;
+            cursor: pointer;
+          }
+          .clock{
+            display: flex;
+            align-items: center;
+          }
+          .buyNow{
+            background-color: teal;
+            color: white;
+          }
+          .dateLine{
+            background-color: #EDEDED;
+            height: 16px;
+            width: 1px;
+            margin: 0 8px;
+          }
+          .date, .time {
+            font-family: 'Hind';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: #6E6E6E;
+          }
+          .authorDiv{
+            margin-top: 20px;
+          }
+          .authImg {
+            margin-right: 8px;
+            border-radius: 50%;
+            height: 32px;
+          }
+          .tags{
+            font-family: 'Hind';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            text-transform: capitalize;
+            color: teal;
+            padding: 5px 8px;
+            background: rgba(230, 0, 119, 0.02);
+            border-radius: 2px;
+            width: max-content;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 1281px) {
+        .store-wrapper .storeList .store-articles {
+          margin-bottom: 64px;
+          display: flex;
+          flex-direction: column;
+          width: 30%;
+          margin-left: 12px;
+          margin-right: 12px;
+        }
+      }
+      @media only screen and (max-width: 1281px) {
+        .store-wrapper .storeList .store-articles {
+          margin-bottom: 64px;
+          display: flex;
+          flex-direction: column;
+          width: 29%;
+          margin-left: 12px;
+          margin-right: 12px;
+        }
+      }
+      @media only screen and (max-width: 1227px) {
+        .store-wrapper {
+          .tabButton {
+            max-width: 1110px;
+            margin: auto;
+            padding: 0 20px;
+          }
+          .storeList {
+            padding: 63px 126px;
+            max-width: 1410px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+          }
+        }
+      }
+      @media only screen and (max-width: 1102px) {
+        .store-wrapper {
+      
+          .storeList {
+            padding: 63px 126px;
+            max-width: 1260px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+          }
+        }
+      }
+      @media only screen and (max-width: 1000px) {
+        .store-wrapper .featureList .feature-articles {
+          display: flex;
+          margin: auto;
+          flex-direction: column-reverse;
+          justify-content: space-between;
+          max-width: 840px;
+          padding-top: 64px;
+          padding-bottom: 65px;
+          .img {
+            align-self: unset;
+          }
+        }
+        .store-wrapper .featureList {
+          padding: 0 75px;
+        }
+        .store-wrapper .storeNav{
+          padding: 154px 75px 29px;
+          .storeLinks {
+            display: none;
+          }
+        }
+        .store-wrapper .storeNav .navContent .dropdownMenu {
+          display: flex;
+        }
+        .store-wrapper .storeList {
+          padding: 63px 60px;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .store-wrapper .storeList .store-articles {
+          margin-bottom: 64px;
+          display: flex;
+          flex-direction: column;
+          width: 43%;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        .store-wrapper .featureList {
+          padding: 0 20px;
+        }
+        .store-wrapper .storeNav{
+          padding: 154px 20px 29px;
+          .storeLinks {
+            display: none;
+          }
+        }
+        .store-wrapper .storeList {
+          padding: 20px 20px;
+          justify-content: center;
+        }
+        .store-wrapper .storeList .store-articles {
+          margin-bottom: 64px;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+      }

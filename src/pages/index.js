@@ -11,101 +11,95 @@ import Crypto from '../images/dtk_crypto.png'
 import Home from '../images/dtk_home.png'
 import Stocks from '../images/dtk_stocks.png'
 import Trend from '../images/dtk_trend.png'
+import Moon from '../images/moon.png'
 
 const IndexPage = ({data}) => (
 
   <Layout>
     <Seo title="Home" />
     <div className=''>
-      <h1>
-        Dreams Through Knowledge
-      </h1>  
+
+      <img className="moon-icon" src={Moon} alt="glow" /> 
 
       <Carousel interval={2000} fade>
         <Carousel.Item>
           <img
-            className="d-block w-50 m-auto bg-black"
+            className="d-block w-50 m-auto"
             src={Blank}
             alt="Blank"
           />
           <Carousel.Caption>
-            <h3>Learn new ways to make money</h3>
+            <h4>Learn new ways to make money</h4>
           </Carousel.Caption>
         </Carousel.Item>
 
         <Carousel.Item>
           <img
-            className="d-block w-50 m-auto bg-black"
+            className="d-block w-50 m-auto"
             src={Brain}
             alt="Second slide"
           />
           <Carousel.Caption>
-            <h3>Learn how to expand your mind</h3>
+            <h4>Learn how to expand your mind</h4>
           </Carousel.Caption>
         </Carousel.Item>
 
         <Carousel.Item>
           <img
-            className="d-block w-50 m-auto bg-black"
+            className="d-block w-50 m-auto"
             src={Crypto}
             alt="Third slide"
           />
           <Carousel.Caption>
-            <h3>Get invested into crypto</h3>
+            <h4>Get invested into crypto</h4>
           </Carousel.Caption>
         </Carousel.Item>
         
         <Carousel.Item>
           <img
-            className="d-block w-50 m-auto bg-black"
+            className="d-block w-50 m-auto"
             src={Home}
             alt="Third slide"
           />
           <Carousel.Caption>
-            <h3>Make a living in real estate</h3>
+            <h4>Make a living in real estate</h4>
           </Carousel.Caption>
         </Carousel.Item>
         
         <Carousel.Item>
           <img
-            className="d-block w-50 m-auto bg-black"
+            className="d-block w-50 m-auto"
             src={Stocks}
             alt="Third slide"
           />
           <Carousel.Caption>
-            <h3>Invest with expert traders</h3>
+            <h4>Invest with expert traders</h4>
           </Carousel.Caption>
         </Carousel.Item>
         
         <Carousel.Item>
           <img
-            className="d-block w-50 m-auto bg-black"
+            className="d-block w-50 m-auto"
             src={Trend}
             alt="Third slide"
           />
           <Carousel.Caption>
-            <h3>Get an understanding of emerging technologies</h3>
+            <h4>Get an understanding of emerging technologies</h4>
           </Carousel.Caption>
         </Carousel.Item>
 
       </Carousel>
 
-      {data.allContentfulHero.edges.map(({ node, index }) => (
+      {/* {data.allContentfulHero.edges.map(({ node, index }) => (
         <div>
           <h3>{node.title}</h3>
           <p>{node.description}</p>
         </div>          
-      ))}  
+      ))}   */}
 
-
-      {/* <div className="img_carousel">
-        <img src={Blank} alt="blank" />
-        <img src={Stocks} alt="stocks" />
-        <img src={Crypto} alt="crypto" />
-        <img src={Home} alt="home" />
-        <img src={Trend} alt="trend" />
-        <img src={Brain} alt="brain" />
-      </div> */}
+      <button className="joinNow">
+        Join Now
+      </button>
     </div>
   </Layout>
 )

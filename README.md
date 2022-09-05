@@ -18,6 +18,12 @@ GraphQL
 
 SASS
 
+Bootstrap
+
+Google Firebase
+
+Stripe
+
 ## 🚀 Quick start
 
 1.  **Create a Gatsby site.**

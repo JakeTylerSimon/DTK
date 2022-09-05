@@ -19,14 +19,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header/>
       <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
-        }}
+        className='app'
       >
+        <Header/>
         <main>{children}</main>
 
         <footer
