@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Jake from DTK",
   "dependencies": {
+    "bootstrap": "^5.2.0",
     "gatsby": "^4.22.0",
     "gatsby-plugin-image": "^2.22.0",
     "gatsby-plugin-manifest": "^4.22.0",
@@ -15,6 +16,7 @@
     "node-sass": "^7.0.1",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
+    "react-bootstrap": "^2.5.0",
     "react-dom": "^18.1.0"
   },
   "devDependencies": {
