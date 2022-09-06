@@ -1,0 +1,54 @@
+import React from 'react'
+
+const priceTable = () => {
+  return (
+    <div className='price_wrapper'>
+        <div className="single-price">
+            <h1>Monthly</h1>
+            <div className="price">
+                <h3>$190</h3>
+            </div>
+            <div className="deals">
+                <h4>Test data</h4>
+                <h4>Test data</h4>
+                <h4>Test data</h4>
+                <h4>Test data</h4>
+                <h4>Test data</h4>
+            </div>
+            <a href="">Select Plan</a>
+        </div>
+
+        <div className="single-price">
+            <h1>Annually</h1>
+            <div className="price">
+                <h3>$1,999</h3>
+            </div>
+            <div className="deals">
+                <h4>Test data</h4>
+                <h4>Test data</h4>
+                <h4>Test data</h4>
+                <h4>Test data</h4>
+                <h4>Test data</h4>
+            </div>
+            <a href="">Select Plan</a>
+        </div>
+
+        <div className="single-price">
+            <h1>Life-Time</h1>
+            <div className="price">
+                <h3>$5,999</h3>
+            </div>
+            <div className="deals">
+                <h4>Test data</h4>
+                <h4>Test data</h4>
+                <h4>Test data</h4>
+                <h4>Test data</h4>
+                <h4>Test data</h4>
+            </div>
+            <a href="">Select Plan</a>
+        </div>
+    </div>
+  )
+}
+
+export default priceTable

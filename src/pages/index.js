@@ -3,6 +3,9 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Contact from '../components/contact'
+import PriceTable from '../components/priceTable'
+
 import Carousel from 'react-bootstrap/Carousel';
 
 import Blank from '../images/dtk_blank.png'
@@ -21,7 +24,7 @@ const IndexPage = ({data}) => (
 
       <img className="moon-icon" src={Moon} alt="glow" /> 
 
-      <Carousel interval={2000} fade>
+      <Carousel interval={1500} fade>
         <Carousel.Item>
           <img
             className="d-block w-50 m-auto"
@@ -101,6 +104,9 @@ const IndexPage = ({data}) => (
         Join Now
       </button>
     </div>
+
+    <PriceTable />
+    <Contact />
   </Layout>
 )
 

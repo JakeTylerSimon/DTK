@@ -44,8 +44,6 @@ export default function RootIndex() {
     const changeUrl=(filter)=>{
       filterDataList(filter);
       setFilter(filter.toLowerCase());
-
-      window.history.pushState(null,'',`${filter.toLowerCase()}`);
     }
 
 
@@ -92,16 +90,18 @@ export default function RootIndex() {
             <div className="storeList">
                 <div className="article-wrapper">
                     {filteredList.slice(0, visible).map((part, key) => {
-                        return <div className="blog-articles" key={key}>
-                            <img className='mainImg' src={part.img}/>
-                            <span className='tags'>{part.tags}</span>
+                        return <div className="blog-articles col-6" key={key}>
+                                    <img className='mainImg' src={part.img}/>
+                                    <span className='tags'>{part.tags}</span>
 
-                            <h4 className='title'>{part.title}</h4>
-                            
-                            <div className='clock'>
-                                <span className='date'>{part.price}</span>
-                            </div>
-                        </div>
+                                    <h4 className='title'>{part.title}</h4>
+                                    
+                                    <div className='clock'>
+                                        <span className='date'>{part.price}</span>
+                                    </div>
+
+                                    <button className='buyNow'>Buy Now</button>
+                                </div>
                     })}
                 </div>
             </div>

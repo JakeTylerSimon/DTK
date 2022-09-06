@@ -97,7 +97,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1110px;
+        // max-width: 1110px;
         margin: auto;
         h4{
           font-family: 'Hind';
@@ -129,14 +129,14 @@
       }
     }
     .storeList{
-        padding: 63px 126px;
+        padding: 63px 0px;
         max-width: 1440px;
         margin: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         .article-wrapper {
-          margin: auto;
+        //   margin: auto;
           // justify-content: space-between;
           display: flex;
           flex-wrap: wrap;
@@ -145,9 +145,9 @@
           margin-bottom: 64px;
             display: flex;
             flex-direction: column;
-            width: 31%;
-            margin-left: 12px;
-            margin-right: 12px;
+            // width: 31%;
+            // margin-left: 12px;
+            // margin-right: 12px;
           .mainImg{
             width: 100%;
             margin-bottom: 18px;
@@ -176,6 +176,7 @@
           .buyNow{
             background-color: teal;
             color: white;
+            margin-top: 20px;
           }
           .dateLine{
             background-color: #EDEDED;
@@ -187,7 +188,7 @@
             font-family: 'Hind';
             font-style: normal;
             font-weight: 400;
-            font-size: 12px;
+            font-size: 18px;
             line-height: 14px;
             color: #6E6E6E;
           }
@@ -322,3 +323,206 @@
           width: 100%;
         }
       }
+
+// Contact.js
+.containery{
+	position: relative;
+	// width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 75px 0px;
+  margin: auto;
+}
+
+.containery:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url(../images/invest.jpg) no-repeat center;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-boxy{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.lefty{
+	background: url(../images/invest.jpg) no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.righty{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: teal;
+}
+
+.field{
+	width: 90%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.contact_btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background: teal;
+    color: white;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+	.contact-boxy{
+		grid-template-columns: 1fr;
+	}
+	.lefty{
+		height: 200px;
+	}
+}
+
+// Pricing Table
+.price_wrapper {
+    width: 900px;
+    margin: 5% auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+    .single-price {
+        width: 33%;
+        // background: gray;
+        color: white;
+        margin-top: 2%;
+        box-shadow: 1px 1px 20px rgba(0,0,0,0.5);
+        text-align: center;
+        transition: 0.9s; 
+
+        h1 {
+            font-size: 18px;
+            color: #fff;
+            line-height: 3;
+            text-transform: uppercase;
+        }
+
+        .price {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 2px solid teal;
+            margin: 5% auto 0 auto;
+            text-align: center;
+
+            h3 {
+                font-size: 38px;
+                color: #fff;
+                margin-top: revert;
+            }
+        }
+
+        .deals {
+            margin-top: 10%;
+
+            h4 {
+                font-size: 14px;
+                font-weight: normal;
+                text-align: center;
+                color: #fff;
+                line-height: 1;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            background: teal;
+            color: #fff;
+            padding: 10px 60px;
+            display: inline-block;
+            margin: 10% auto;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        a:hover {
+            background: white !important;
+            color: teal;
+        }
+    }
+
+    .single-price:hover {
+        background: teal;
+        color: #fff;
+        box-shadow: 0 0 15px rgba(0,0,0,1);
+        transform: scale(1.1);
+        z-index: 1;
+        border-radius: 25px;
+
+        .price {
+            border-color: #fff;
+        }
+
+        a {
+            background: black;
+        }
+    }
+}
+@media only screen and (max-width: 1130px) {
+    .price_wrapper {
+        width: 100%;
+
+    }
+}
