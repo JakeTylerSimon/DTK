@@ -8,6 +8,7 @@ import PriceTable from '../components/priceTable'
 import Newsletter from '../components/newsletter'
 import About from '../components/about'
 import Features from '../components/features'
+import Special from '../components/special'
 
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -109,6 +110,7 @@ const IndexPage = ({data}) => (
     </div>
 
     <About />
+    <Special />
     <Features />
     <Newsletter />
     <PriceTable />

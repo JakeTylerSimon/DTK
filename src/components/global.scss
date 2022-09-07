@@ -438,7 +438,7 @@ textarea{
 // Pricing Table
 .price_wrapper {
     width: 900px;
-    margin: 5% auto;
+    margin: 150px auto 75px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -532,7 +532,6 @@ textarea{
   box-shadow: 1px 1px 20px rgb(0 0 0 / 50%);
   width: 50%;
   margin: auto;
-  margin-top: 60px;
   padding: 20px;
 
   h4 {
@@ -575,7 +574,7 @@ textarea{
   justify-content: space-evenly;
   max-width: 1440px;
   margin: auto;
-  margin-top: 60px;
+  margin-top: 150px;
 
   .img {
     width: 35%;
@@ -601,9 +600,42 @@ textarea{
   }
 }
 
+//Special.js
+.special_wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  max-width: 1440px;
+  margin: auto;
+  margin-top: 150px;
+
+  .img {
+    width: 35%;
+
+    img {
+      width: 100%;
+      opacity: 0.9;
+      border-radius: 5%;
+    }
+  } 
+
+  .special {
+    width: 35%;
+
+    h2 {
+      text-align: center;
+      color: white;
+    }
+
+    p {
+      color: white;
+    }
+  }
+}
+
 // Features.js
 .features_wrapper {
-  margin: 100px 0;
+  margin: 150px 0;
   color: white;
 
   h2{
@@ -625,7 +657,7 @@ textarea{
 
         img{
           width: 100%;
-          margin-bottom: 10px;
+          margin: 10px 0;
         }
       }
 
