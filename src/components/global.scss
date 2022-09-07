@@ -526,3 +526,112 @@ textarea{
 
     }
 }
+
+//Newsletter.js
+.news_wrapper {
+  box-shadow: 1px 1px 20px rgb(0 0 0 / 50%);
+  width: 50%;
+  margin: auto;
+  margin-top: 60px;
+  padding: 20px;
+
+  h4 {
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    text-align: center;
+    margin-top: 20px;
+
+    .input {
+      padding: 5px;
+      width: 33%;
+      margin: 0 10px;
+    }
+
+    .submitBtn {
+      border: none;
+      margin: auto;
+      margin-top: 20px;
+      display: flex;
+      color: white;
+      background: teal;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+    .submitBtn:hover {
+      color: rgba(255, 255, 255, 1);
+      box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    }
+  }
+}
+
+//Abous.js
+.about_wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1440px;
+  margin: auto;
+  margin-top: 60px;
+
+  .img {
+    width: 35%;
+
+    img {
+      width: 100%;
+      opacity: 0.6;
+      border-radius: 5%;
+    }
+  }
+
+  .about {
+    width: 35%;
+
+    h2 {
+      text-align: center;
+      color: white;
+    }
+
+    p {
+      color: white;
+    }
+  }
+}
+
+// Features.js
+.features_wrapper {
+  margin: 100px 0;
+  color: white;
+
+  h2{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .feature_list {
+    display: flex;
+    max-width: 1140px;
+    margin: auto;
+    justify-content: space-between;
+
+    .feature {
+      max-width: 500px;
+
+      .img{
+        width: 48px;
+
+        img{
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+
+      .block {
+
+      }
+    }
+  }
+}

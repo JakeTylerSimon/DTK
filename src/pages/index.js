@@ -5,6 +5,9 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Contact from '../components/contact'
 import PriceTable from '../components/priceTable'
+import Newsletter from '../components/newsletter'
+import About from '../components/about'
+import Features from '../components/features'
 
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -105,6 +108,9 @@ const IndexPage = ({data}) => (
       </button>
     </div>
 
+    <About />
+    <Features />
+    <Newsletter />
     <PriceTable />
     <Contact />
   </Layout>
