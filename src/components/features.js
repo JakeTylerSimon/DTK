@@ -68,6 +68,7 @@ const features = () => {
                 </div>
             </div>
         </div>
+        <h4 className='more'>And much more...</h4>
     </div>
   )
 }

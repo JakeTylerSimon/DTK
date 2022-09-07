@@ -105,7 +105,7 @@ const IndexPage = ({data}) => (
       ))}   */}
 
       <button className="joinNow">
-        Join Now
+        <a href="#prices">Join Now</a> 
       </button>
     </div>
 

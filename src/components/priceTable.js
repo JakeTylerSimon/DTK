@@ -2,7 +2,7 @@ import React from 'react'
 
 const priceTable = () => {
   return (
-    <div className='price_wrapper'>
+    <div id='prices' className='price_wrapper'>
         <div className="single-price">
             <h1>Monthly</h1>
             <div className="price">

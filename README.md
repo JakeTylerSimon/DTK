@@ -24,6 +24,8 @@ Google Firebase
 
 Stripe
 
+Framer Motion
+
 ## 🚀 Quick start
 
 1.  **Create a Gatsby site.**

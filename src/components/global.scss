@@ -64,15 +64,23 @@
     border: none;
     margin: auto;
     display: flex;
-    color: white;
     background: teal;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 18px;
+
+    a{
+      text-decoration: none;
+      color: white;
+    }
 }
 .joinNow:hover {
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+
+    a{
+      color: white;
+    }
   }
 
 //Store.js
@@ -643,6 +651,11 @@ textarea{
     margin-bottom: 40px;
   }
 
+  .more {
+    text-align: center;
+    margin-top: 40px;
+  }
+
   .feature_list {
     display: flex;
     max-width: 1140px;
@@ -659,10 +672,6 @@ textarea{
           width: 100%;
           margin: 10px 0;
         }
-      }
-
-      .block {
-
       }
     }
   }
