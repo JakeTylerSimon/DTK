@@ -24,7 +24,7 @@ const IndexPage = ({data}) => (
 
   <Layout>
     <Seo title="Home" />
-    <div className=''>
+    <div className='index'>
 
       <img className="moon-icon" src={Moon} alt="glow" /> 
 

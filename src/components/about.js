@@ -8,7 +8,7 @@ const about = () => {
             <img src={Astro} alt="" />
         </div>
         <div className='about'>
-            <h2>About DTK</h2>
+            <h2>Why DTK is special</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna 
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation 

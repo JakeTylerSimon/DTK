@@ -2,6 +2,7 @@
     background: rgb(67,67,67);
     background: linear-gradient(212deg, rgba(67,67,67,1) 23%, rgba(0,0,0,1) 82%);
 
+    // background-image: url('../images/space.jpg');
     padding: 20px 100px;
 }
 
@@ -19,7 +20,7 @@
     }
     a:hover {
         text-decoration: overline;
-        color: white
+        color: teal;
     }
 }
 
@@ -90,17 +91,17 @@
       background: #ECF6FA;
       padding: 75px 150px 0px;
         margin-top: 25px;
-      background-image: url(/images/cloud_large.png), url(/images/cloud_large.png);
-      background-repeat: no-repeat;
-      background-size: 311px auto, 175px auto;
+      // background-image: url(/images/cloud_large.png), url(/images/cloud_large.png);
+      // background-repeat: no-repeat;
+      // background-size: 311px auto, 175px auto;
       // width: 100%;
-      background-position: left;
-      animation: blogmove 16s ease-in-out infinite;
-      animation-direction: alternate;
-      @keyframes blogmove {
-        from { background-position: 40% 33px, 80% 44px;}
-        to { background-position: 30% 33px, 70% 44px; }
-      }
+      // background-position: left;
+      // animation: blogmove 16s ease-in-out infinite;
+      // animation-direction: alternate;
+      // @keyframes blogmove {
+      //   from { background-position: 40% 33px, 80% 44px;}
+      //   to { background-position: 30% 33px, 70% 44px; }
+      // }
       .navContent {
         display: flex;
         justify-content: space-between;
@@ -425,7 +426,7 @@ textarea{
 	transition: .3s;
 }
 
-.btn:hover{
+.contact_btn:hover{
     background-color: #27ae60;
 }
 
@@ -439,6 +440,228 @@ textarea{
 		grid-template-columns: 1fr;
 	}
 	.lefty{
+		height: 200px;
+	}
+}
+
+// Signup.js
+.containery-sign{
+	position: relative;
+	// width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 75px 0px;
+  margin: auto;
+}
+
+.containery-sign:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url(../images/sign-up.jpg) no-repeat center;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-boxy{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.lefty-sign{
+	background: url(../images/sign-up.jpg) no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.righty{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: teal;
+}
+
+.field{
+	width: 90%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.contact_btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background: teal;
+    color: white;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.contact_btn:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+	.contact-boxy{
+		grid-template-columns: 1fr;
+	}
+	.lefty-sign{
+		height: 200px;
+	}
+}
+
+// Login.js
+.containery-log{
+	position: relative;
+	// width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 75px 0px;
+  margin: auto;
+}
+
+.containery-log:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url(../images/login.jpg) no-repeat center;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-boxy{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.lefty-log{
+	background: url(../images/login.jpg) no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.righty{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: teal;
+}
+
+.field{
+	width: 90%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.contact_btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background: teal;
+    color: white;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.contact_btn:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+	.contact-boxy{
+		grid-template-columns: 1fr;
+	}
+	.lefty-log{
 		height: 200px;
 	}
 }
@@ -457,7 +680,7 @@ textarea{
         // background: gray;
         color: white;
         margin-top: 2%;
-        box-shadow: 1px 1px 20px rgba(0,0,0,0.5);
+        box-shadow: 1px 4px 25px teal;
         text-align: center;
         transition: 0.9s; 
 
