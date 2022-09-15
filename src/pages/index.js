@@ -28,7 +28,7 @@ const IndexPage = ({data}) => (
 
       <img className="moon-icon" src={Moon} alt="glow" /> 
 
-      <Carousel interval={1500} fade>
+      <Carousel slide={false} interval={1500} fade>
         <Carousel.Item>
           <img
             className="d-block w-50 m-auto"

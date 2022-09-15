@@ -6,7 +6,10 @@
   "author": "Jake from DTK",
   "dependencies": {
     "bootstrap": "^5.2.0",
+    "dotenv": "^16.0.2",
+    "firebase": "^9.10.0",
     "gatsby": "^4.22.0",
+    "gatsby-plugin-firebase": "^0.2.0-beta.4",
     "gatsby-plugin-image": "^2.22.0",
     "gatsby-plugin-manifest": "^4.22.0",
     "gatsby-plugin-sass": "^5.22.0",

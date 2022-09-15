@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`, 
+})
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -36,5 +39,19 @@ module.exports = {
         accessToken: `MBhZCAPTKGe4GI_z54g5PEVPUSnGbcTVRDy8Am6lelc`,
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-firebase`,
+    //   options: {
+    //     credentials: {
+    //       apiKey: process.env.apiKey,
+    //       authDomain: process.env.authDomain,
+    //       projectId: process.env.projectId,
+    //       storageBucket: process.env.storageBucket,
+    //       messagingSenderId: process.env.messagingSenderId,
+    //       appId: process.env.appId,
+    //       measurementId: process.env.measurementId,
+    //     }
+    //   },
+    // },
   ],
 }
