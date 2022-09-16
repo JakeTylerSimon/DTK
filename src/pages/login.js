@@ -66,7 +66,7 @@ const RootIndex = () => {
         </div>
       </div>
 
-      <News />
+      {/* <News /> */}
     </Layout>
   )
 }

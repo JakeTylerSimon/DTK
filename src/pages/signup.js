@@ -104,7 +104,7 @@ const RootIndex = () => {
       </div>
 
       <Feature />
-      <News />
+      {/* <News /> */}
     </Layout>
   )
 }
