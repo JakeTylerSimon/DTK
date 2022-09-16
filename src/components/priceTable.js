@@ -19,7 +19,7 @@ const RootIndex = () => {
     //   ); 
     
     return (
-        <div className="pricing-wrapper">
+        <div id='prices' className="pricing-wrapper">
             <h2>Pricing</h2>
             <table class="features">
                 <thead>

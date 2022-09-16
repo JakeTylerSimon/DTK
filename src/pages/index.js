@@ -12,12 +12,12 @@ import Special from '../components/special'
 
 import Carousel from 'react-bootstrap/Carousel';
 
-import Blank from '../images/dtk_blank.png'
-import Brain from '../images/dtk_brain.png'
-import Crypto from '../images/dtk_crypto.png'
-import Home from '../images/dtk_home.png'
-import Stocks from '../images/dtk_stocks.png'
-import Trend from '../images/dtk_trend.png'
+import Blank from '../images/2.svg'
+import Brain from '../images/3.svg'
+import Crypto from '../images/4.svg'
+import Home from '../images/8.svg'
+import Stocks from '../images/10.svg'
+import Trend from '../images/12.svg'
 import Moon from '../images/moon.png'
 
 const IndexPage = ({data}) => (
