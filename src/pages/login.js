@@ -24,7 +24,7 @@ const RootIndex = () => {
 
   return (
     <Layout>
-      <Seo title="Sign Up" />
+      <Seo title="Log In" />
 
       <div className="">
         <div className="containery-log">

@@ -919,3 +919,240 @@ textarea{
     }
   }
 }
+
+// Pricing Plan
+.pricing-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 10px;
+  background-color: white;
+  h2 {
+    margin-bottom: 40px;
+  }
+  img{
+    width: 200px;
+  }
+  .data-rows:hover {
+    background: grey;
+    opacity: 0.5;
+  }
+  .color {
+    background: teal;
+  }
+  .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 110px;
+    padding: 9px 13px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: white;
+    background: teal;
+    border: none;
+    border-radius: 5px;
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  }
+  button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    background: purple;
+  }
+  .features {
+    border-collapse: collapse;
+    font-family: sans-serif;
+    background-color: white;
+    box-shadow: 1px 4px 25px black;
+  }
+  .features__cell {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+  padding: 0.5em 1em;
+  color: black;
+  border: 1px solid #dddddd;
+  max-width: 349px;
+  border: 0px;
+  img{
+    width: 15px;
+    margin-left: 10px;
+  }
+  }
+  .features__cell--bold {
+    font-weight: bold;
+    span{
+      font-weight: 700;
+      font-size: 54px;
+      line-height: 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+  }
+  .features__cell--shaded {
+    // background: rgba(159, 211, 228, 0.4);
+  }
+  .features__cell--large {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    border: 0px;
+  }
+  .features__cell--center {
+    text-align: center;
+    border: 0px;
+  }
+  .features__feature{
+   text-align: left;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 150%;
+   span{
+    font-weight: 400;
+    font-size: 16px;
+   }
+  }
+  .features__small{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .features__tick::after {
+    content: "\2714";
+    font-size: 1.5em;
+    color: green;
+  }
+}
+@media only screen and (max-width:769px) {
+ .pricing-wrapper{
+   padding-left: 0;
+   padding-right: 0;
+   h1{
+    font-weight: 600;
+    font-size: 28px;
+   }
+   .features__cell{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    padding: 1em 0.5em;
+   }
+   .button{
+    width: 100px;
+    padding: 6px 8px;
+   }
+   .features__cell--bold{
+     span {
+      font-weight: 500;
+      font-size: 32px;
+     }
+   }
+   .features__cell--large {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .features__tick::after {
+    font-size: 1em;
+  }
+ }
+}
+@media only screen and (max-width:426px) {
+ .pricing-wrapper{
+   padding-left: 0;
+   padding-right: 0;
+   h1{
+    font-weight: 600;
+    font-size: 18px;
+   }
+   .features__cell{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    padding: 0.5em 0.5em;
+    .button{
+     padding: 2px 4px;
+     font-size: 10px;
+    }
+   }
+   .features__cell--bold{
+     span {
+      font-weight: 500;
+      font-size: 22px;
+     }
+   }
+   .features__cell--large {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .features__tick::after {
+    font-size: 1em;
+  }
+  .features__cell--bold {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .features__feature{
+    span{
+     font-weight: 300;
+     font-size: 12px;
+    }
+   }
+ }
+}
+@media only screen and (max-width:426px) {
+ .pricing-wrapper{
+   padding-left: 0;
+   padding-right: 0;
+   h1{
+    font-weight: 500;
+    font-size: 16px;
+   }
+   .features__cell{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    padding: 0.25em 0.25em;
+   }
+   .button{
+    width: 40px;
+    padding: 2px 4px;
+    font-size: 12px;
+   }
+   .features__cell--bold{
+     span {
+      font-weight: 500;
+      font-size: 24px;
+     }
+   }
+   .features__cell--large {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .features__tick::after {
+    font-size: 1em;
+  }
+  .features__cell--bold {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .features__feature{
+    span{
+     font-weight: 300;
+     font-size: 12px;
+    }
+   }
+ }
+}
