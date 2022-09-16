@@ -12,6 +12,11 @@
     justify-content: space-between;
     color: white;
     font-size: 18px;
+    // opacity: .95;
+    // position: fixed;
+    // top: 0;
+    // width: 100%;
+    // z-index: 2000;
     
     a{
         color: white;
@@ -137,7 +142,7 @@
       }
     }
     .storeList{
-        padding: 63px 0px;
+        padding: 63px 100px;
         max-width: 1440px;
         margin: auto;
         display: flex;
@@ -1017,9 +1022,11 @@ textarea{
    font-weight: 600;
    font-size: 18px;
    line-height: 150%;
+   text-align: center;
    span{
     font-weight: 400;
     font-size: 16px;
+    text-align: center;
    }
   }
   .features__small{
