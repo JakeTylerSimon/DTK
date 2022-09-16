@@ -112,7 +112,7 @@ const IndexPage = ({data}) => (
     <About />
     <Special />
     <Features />
-    <Newsletter />
+    {/* <Newsletter /> */}
     <PriceTable />
     <Contact />
   </Layout>

@@ -4,6 +4,8 @@ import Astro from '../images/astro.png'
 const about = () => {
   return (
     <div className='about_wrapper'>
+      <div className='about_content'>
+
         <div className='img'>
             <img src={Astro} alt="" />
         </div>
@@ -18,6 +20,7 @@ const about = () => {
                 occaecat cupidatat non proident, sunt in culpa qui officia 
                 deserunt mollit anim id est laborum.</p>
         </div>
+      </div>
     </div>
   )
 }

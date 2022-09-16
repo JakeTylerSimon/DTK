@@ -16,10 +16,9 @@ const Profile = () => {
         <div>
         <p>Welcome back to your profile, {currentUser.email}!</p>
         <p>
-            This is a client-only route. You could set up a form to save information
-            about a user here.
+            Your content will be here soon...
         </p>
-        <span onClick={clickLogin}>Sign Out</span>
+        <span style={{ cursor: 'pointer' }} onClick={clickLogin}>Sign Out</span>
         </div>
     </Layout>
   )

@@ -1,9 +1,8 @@
 .app {
     background: rgb(67,67,67);
     background: linear-gradient(212deg, rgba(67,67,67,1) 23%, rgba(0,0,0,1) 82%);
-
-    // background-image: url('../images/space.jpg');
-    padding: 20px 100px;
+    padding: 20px 0px;
+    // padding: 20px 100px;
 }
 
 .nav {
@@ -668,87 +667,95 @@ textarea{
 
 // Pricing Table
 .price_wrapper {
-    width: 900px;
-    margin: 150px auto 75px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+  padding: 75px 0;
+  background: white;
 
-    .single-price {
-        width: 33%;
-        // background: gray;
-        color: white;
-        margin-top: 2%;
-        box-shadow: 1px 4px 25px teal;
-        text-align: center;
-        transition: 0.9s; 
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
 
-        h1 {
-            font-size: 18px;
-            color: #fff;
-            line-height: 3;
-            text-transform: uppercase;
-        }
+    .price_content{
+      width: 900px;
+      margin: auto ;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      background: black;
 
-        .price {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            border: 2px solid teal;
-            margin: 5% auto 0 auto;
-            text-align: center;
+      .single-price {
+          width: 33%;
+          box-shadow: 1px 4px 25px teal;
+          text-align: center;
+          transition: 0.9s; 
 
-            h3 {
-                font-size: 38px;
-                color: #fff;
-                margin-top: revert;
-            }
-        }
+          h1 {
+              font-size: 18px;
+              color: #fff;
+              line-height: 3;
+              text-transform: uppercase;
+          }
 
-        .deals {
-            margin-top: 10%;
+          .price {
+              width: 130px;
+              height: 130px;
+              border-radius: 50%;
+              border: 2px solid teal;
+              margin: 5% auto 0 auto;
+              text-align: center;
 
-            h4 {
-                font-size: 14px;
-                font-weight: normal;
-                text-align: center;
-                color: #fff;
-                line-height: 1;
-            }
-        }
+              h3 {
+                  font-size: 38px;
+                  color: #fff;
+                  margin-top: revert;
+              }
+          }
 
-        a {
-            text-decoration: none;
-            background: teal;
-            color: #fff;
-            padding: 10px 60px;
-            display: inline-block;
-            margin: 10% auto;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-        a:hover {
-            background: white !important;
-            color: teal;
-        }
-    }
+          .deals {
+              margin-top: 10%;
 
-    .single-price:hover {
-        background: teal;
-        color: #fff;
-        box-shadow: 0 0 15px rgba(0,0,0,1);
-        transform: scale(1.1);
-        z-index: 1;
-        border-radius: 25px;
+              h4 {
+                  font-size: 14px;
+                  font-weight: normal;
+                  text-align: center;
+                  color: #fff;
+                  line-height: 1;
+              }
+          }
 
-        .price {
-            border-color: #fff;
-        }
+          a {
+              text-decoration: none;
+              background: teal;
+              color: #fff;
+              padding: 10px 60px;
+              display: inline-block;
+              margin: 10% auto;
+              text-transform: uppercase;
+              font-weight: bold;
+          }
+          a:hover {
+              background: white !important;
+              color: teal;
+          }
+      }
 
-        a {
-            background: black;
-        }
+      .single-price:hover {
+          background: teal;
+          color: #fff;
+          box-shadow: 0 0 15px rgba(0,0,0,1);
+          transform: scale(1.1);
+          z-index: 1;
+          border-radius: 25px;
+
+          .price {
+              border-color: #fff;
+          }
+
+          a {
+              background: black;
+          }
+      }
     }
 }
 @media only screen and (max-width: 1130px) {
@@ -801,73 +808,86 @@ textarea{
 
 //Abous.js
 .about_wrapper {
+  background: white;
   display: flex;
-  justify-content: space-evenly;
-  max-width: 1440px;
-  margin: auto;
-  margin-top: 150px;
+  margin-top: 75px;
 
-  .img {
-    width: 35%;
+  .about_content{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1440px;
+    margin: auto;
+    padding: 75px 0;
 
-    img {
-      width: 100%;
-      opacity: 0.6;
-      border-radius: 5%;
-    }
-  }
+    .img {
+      width: 35%;
 
-  .about {
-    width: 35%;
-
-    h2 {
-      text-align: center;
-      color: white;
+      img {
+        width: 100%;
+        opacity: 0.6;
+        border-radius: 5%;
+        box-shadow: 1px 4px 25px black;
+      }
     }
 
-    p {
-      color: white;
+    .about {
+      width: 35%;
+
+      h2 {
+        text-align: center;
+        // color: white;
+      }
+
+      p {
+        // color: white;
+      }
     }
   }
 }
 
 //Special.js
 .special_wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row-reverse;
-  max-width: 1440px;
-  margin: auto;
-  margin-top: 150px;
+  background: white;
+  padding: 75px 0;
 
-  .img {
-    width: 35%;
+  .special_content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    max-width: 1440px;
+    margin: auto;
 
-    img {
-      width: 100%;
-      opacity: 0.9;
-      border-radius: 5%;
-    }
-  } 
+    .img {
+      width: 35%;
 
-  .special {
-    width: 35%;
+      img {
+        width: 100%;
+        opacity: 0.9;
+        border-radius: 5%;
+        box-shadow: 1px 4px 25px black;
+      }
+    } 
 
-    h2 {
-      text-align: center;
-      color: white;
-    }
+    .special {
+      width: 35%;
 
-    p {
-      color: white;
+      h2 {
+        text-align: center;
+        // color: white;
+      }
+
+      p {
+        // color: white;
+      }
     }
   }
 }
 
 // Features.js
 .features_wrapper {
-  margin: 150px 0;
+  padding: 75px 0;
   color: white;
+  background: black;
 
   h2{
     text-align: center;
