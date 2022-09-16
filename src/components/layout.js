@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "./footer"
 import "./global.scss"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -24,8 +25,8 @@ const Layout = ({ children }) => {
       >
         <Header/>
         <main>{children}</main>
-
-        <footer
+        <Footer />
+        {/* <footer
           style={{
             marginTop: `var(--space-5)`,
             fontSize: `var(--font-sm)`,
@@ -34,8 +35,7 @@ const Layout = ({ children }) => {
           © {new Date().getFullYear()} &middot; Built by
           {` `}
           <a href="https://www.Jakesimondev.com">Jake from DTK</a>
-        </footer>
-        {/* ADD: Terms Needed Footer links and terms */}
+        </footer> */}
       </div>
     </>
   )
