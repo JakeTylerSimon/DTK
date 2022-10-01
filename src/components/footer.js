@@ -11,11 +11,16 @@ const footer = ({data}) => {
 		<nav className="footerNavigation">
 			<div className="logo">
 			<Link to="/">
-				<img src={FootLogo} alt="Oversight" />
+				<img src={FootLogo} alt="OveDTKrsight" />
 			</Link>
 			</div>
 			<div className="socialLinks">
 				<ul className='footerNav'>
+					<li className='footLink'>
+						<Link to='/'>
+							Home
+						</Link>
+					</li>
 					<li className='footLink'>
 						<Link to='/store'>
 							Store
@@ -26,7 +31,7 @@ const footer = ({data}) => {
 							Courses
 						</Link>
 					</li>
-					<li className='footLink'>
+					{/* <li className='footLink'>
 						<Link to='/signup'>
 							Sign Up
 						</Link>
@@ -35,7 +40,7 @@ const footer = ({data}) => {
 						<Link to='/login'>
 							Log In
 						</Link>
-					</li>
+					</li> */}
 				</ul>
 			</div>
 			{/* <div>

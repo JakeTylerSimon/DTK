@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -9,6 +9,7 @@ import Newsletter from '../components/newsletter'
 import About from '../components/about'
 import Features from '../components/features'
 import Special from '../components/special'
+import Testimonials from '../components/testimonials'
 
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -26,12 +27,12 @@ const IndexPage = ({data}) => (
     <Seo title="Home" />
     <div className='index'>
 
-      <img className="moon-icon" src={Moon} alt="glow" /> 
+      {/* <img className="moon-icon" src={Moon} alt="glow" />  */}
 
       <Carousel slide={false} interval={1500} fade>
         <Carousel.Item>
           <img
-            className="d-block w-50 m-auto"
+            className="d-block w-25 m-auto p-25"
             src={Blank}
             alt="Blank"
           />
@@ -42,7 +43,7 @@ const IndexPage = ({data}) => (
 
         <Carousel.Item>
           <img
-            className="d-block w-50 m-auto"
+            className="d-block w-25 m-auto p-25"
             src={Brain}
             alt="Second slide"
           />
@@ -53,7 +54,7 @@ const IndexPage = ({data}) => (
 
         <Carousel.Item>
           <img
-            className="d-block w-50 m-auto"
+            className="d-block w-25 m-auto p-25"
             src={Crypto}
             alt="Third slide"
           />
@@ -64,7 +65,7 @@ const IndexPage = ({data}) => (
         
         <Carousel.Item>
           <img
-            className="d-block w-50 m-auto"
+            className="d-block w-25 m-auto p-25"
             src={Home}
             alt="Third slide"
           />
@@ -75,7 +76,7 @@ const IndexPage = ({data}) => (
         
         <Carousel.Item>
           <img
-            className="d-block w-50 m-auto"
+            className="d-block w-25 m-auto p-25"
             src={Stocks}
             alt="Third slide"
           />
@@ -86,7 +87,7 @@ const IndexPage = ({data}) => (
         
         <Carousel.Item>
           <img
-            className="d-block w-50 m-auto"
+            className="d-block w-25 m-auto p-25"
             src={Trend}
             alt="Third slide"
           />
@@ -112,9 +113,10 @@ const IndexPage = ({data}) => (
     <About />
     <Special />
     <Features />
-    {/* <Newsletter /> */}
     <PriceTable />
-    <Contact />
+    <Newsletter />
+    {/* <Contact /> */}
+    <Testimonials />
   </Layout>
 )
 
