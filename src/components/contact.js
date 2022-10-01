@@ -1,19 +1,19 @@
 import React from 'react'
 
-const contact = () => {
+const Contact = () => {
   return (
     <div className=''>
 
       <div className="containery">
-            <div class="contact-boxy">
-                <div class="lefty"></div>
-                <div class="righty">
+            <div className="contact-boxy">
+                <div className="lefty"></div>
+                <div className="righty">
                     <h2>Reach Out</h2>
-                    <input type="text" class="field" placeholder="Your Name"/>
-                    <input type="text" class="field" placeholder="Your Email"/>
-                    <input type="text" class="field" placeholder="Phone"/>
-                    <textarea placeholder="Message" class="field"></textarea>
-                    <button class="contact_btn">Send</button>
+                    <input type="text" className="field" placeholder="Your Name"/>
+                    <input type="text" className="field" placeholder="Your Email"/>
+                    <input type="text" className="field" placeholder="Phone"/>
+                    <textarea placeholder="Message" className="field"></textarea>
+                    <button className="contact_btn">Send</button>
                 </div>
             </div>
         </div>
@@ -22,4 +22,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact

@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from "gatsby"
 import FootLogo from '../images/2.svg'
-// import LinkedIn from '../images/linkedin.svg'
-// import Twitter from '../images/twitter.svg'
+import { BsTwitter } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
 
-const footer = ({data}) => {
+const RootIndex = () => {
 	return (
 
 	<footer>
@@ -43,25 +43,25 @@ const footer = ({data}) => {
 					</li> */}
 				</ul>
 			</div>
-			{/* <div>
+			<div>
 				<ul className='footSocial'>
-					<Link to='https://www.linkedin.com/showcase/oversight-co'>
-						<img src={LinkedIn} alt="" />
+					<Link to='https://www.instagram.com/dtkdreamers/'>
+						<BsInstagram className='instagram' />
 					</Link>
-					<Link to='https://twitter.com/Oversight_Co'>
-						<img className='twitter' src={Twitter} alt="" />
+					<Link to='https://twitter.com/dtkdreamers'>
+						<BsTwitter className='twitter' />
 					</Link>
 				</ul>
-			</div> */}
+			</div>
 		</nav>
 		<div className="copyright">
 			<p>{new Date().getUTCFullYear()} DTK. All rights reserved</p>
-			<ul class="terms">
-				<li><a href="/terms-and-conditions">Terms & Conditions</a></li>
-				<li><a href="/privacy-policy">Privacy Policy</a></li>
+			<ul className="terms">
+				<li><a href="/terms">Terms & Conditions</a></li>
+				<li><a href="/privacy">Privacy Policy</a></li>
 			</ul>
 		</div>
 	</footer>
 )}
 
-export default footer
+export default RootIndex

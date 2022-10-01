@@ -148,23 +148,17 @@
 // export default RootIndex
 
 import React from 'react'
+import Accordion from 'react-bootstrap/Accordion';
 
-const priceTable = () => {
+const PriceTable = () => {
   return (
     <div id='prices' className='price_wrapper'>
-            <h2>Pricing</h2>
+        <h2 className='priceHeader'>Pricing</h2>
         <div className="price_content">
             <div className="single-price">
                 <h1>Monthly</h1>
                 <div className="price">
-                    <h3>$190</h3>
-                </div>
-                <div className="deals">
-                    <h4>Test data</h4>
-                    <h4>Test data</h4>
-                    <h4>Test data</h4>
-                    <h4>Test data</h4>
-                    <h4>Test data</h4>
+                    <h3>$200</h3>
                 </div>
                 <a href="https://launchpass.com/dtk/black">Select Plan</a>
             </div>
@@ -172,14 +166,7 @@ const priceTable = () => {
             <div className="single-price">
                 <h1>Annually</h1>
                 <div className="price">
-                    <h3>$1,999</h3>
-                </div>
-                <div className="deals">
-                    <h4>Test data</h4>
-                    <h4>Test data</h4>
-                    <h4>Test data</h4>
-                    <h4>Test data</h4>
-                    <h4>Test data</h4>
+                    <h3>$2,000</h3>
                 </div>
                 <a href="https://launchpass.com/dtk/gold">Select Plan</a>
             </div>
@@ -187,20 +174,54 @@ const priceTable = () => {
             <div className="single-price">
                 <h1>Life-Time</h1>
                 <div className="price">
-                    <h3>$5,999</h3>
-                </div>
-                <div className="deals">
-                    <h4>Test data</h4>
-                    <h4>Test data</h4>
-                    <h4>Test data</h4>
-                    <h4>Test data</h4>
-                    <h4>Test data</h4>
+                    <h3>$6,000</h3>
                 </div>
                 <a href="https://launchpass.com/dtk/platinum">Select Plan</a>
             </div>
         </div>
+
+        <h2 className='price_details'>Pricing Details</h2>
+
+        <Accordion defaultActiveKey={['0']} alwaysOpen>
+            <Accordion.Item eventKey="0">
+                <Accordion.Header className='accordian'>Monthly Details</Accordion.Header>
+                <Accordion.Body>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.
+                </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+                <Accordion.Header className='accordian'>Yearly Details</Accordion.Header>
+                <Accordion.Body>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.
+                </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="2">
+                <Accordion.Header className='accordian'>Life Time Details</Accordion.Header>
+                <Accordion.Body>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.
+                </Accordion.Body>
+            </Accordion.Item>
+        </Accordion>
     </div>
   )
 }
 
-export default priceTable
+export default PriceTable

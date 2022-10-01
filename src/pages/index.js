@@ -1,9 +1,8 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+// import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Contact from '../components/contact'
 import PriceTable from '../components/priceTable'
 import Newsletter from '../components/newsletter'
 import About from '../components/about'
@@ -19,9 +18,10 @@ import Crypto from '../images/4.svg'
 import Home from '../images/8.svg'
 import Stocks from '../images/10.svg'
 import Trend from '../images/12.svg'
-import Moon from '../images/moon.png'
+// import Moon from '../images/moon.png'
 
-const IndexPage = ({data}) => (
+const IndexPage = () => (
+// const IndexPage = ({data}) => (
 
   <Layout>
     <Seo title="Home" />
@@ -115,7 +115,6 @@ const IndexPage = ({data}) => (
     <Features />
     <PriceTable />
     <Newsletter />
-    {/* <Contact /> */}
     <Testimonials />
   </Layout>
 )
@@ -124,18 +123,18 @@ export const Head = () => <Seo title="Home" />
 
 export default IndexPage
 
-export const query = graphql`
-{
-  allContentfulHero {
-    edges {
-      node {
-        title
-        description
-        id
-        image {
-          url
-        }
-      }
-    }
-  }
-}`
+// export const query = graphql`
+// {
+//   allContentfulHero {
+//     edges {
+//       node {
+//         title
+//         description
+//         id
+//         image {
+//           url
+//         }
+//       }
+//     }
+//   }
+// }`

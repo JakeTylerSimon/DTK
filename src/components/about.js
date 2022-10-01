@@ -1,7 +1,7 @@
 import React from 'react'
 import Astro from '../images/astro.png'
 
-const about = () => {
+const About = () => {
   return (
     <div className='about_wrapper'>
       <div className='about_content'>
@@ -11,18 +11,25 @@ const about = () => {
         </div>
         <div className='about'>
             <h2>Why DTK is special</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit 
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                occaecat cupidatat non proident, sunt in culpa qui officia 
-                deserunt mollit anim id est laborum.</p>
+            <p>What started as a group of friends with 
+              little to invest became so much more as
+                we consistently outperformed the market. 
+                DTK was created to help others find 
+                financial freedom by bringing news, data, 
+                education and AI all in one place, whether 
+                you have $100 or $1,000,000 to invest.</p>
+                
+          <p>Our members are family. Every one of us 
+              made the decision to take control of our 
+              lives and brings our own set of experiences 
+              to the table. Join a group of like-minded 
+              entrepreneurs who share the common vision 
+              of changing the world and living their dreams, 
+              untethered.</p>
         </div>
       </div>
     </div>
   )
 }
 
-export default about
+export default About

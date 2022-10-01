@@ -1,5 +1,5 @@
 import React, {useEffect} from "react"
-import { Link, navigate } from "gatsby"
+import { Link } from "gatsby"
 
 import { HiMenuAlt3 } from "react-icons/hi";
 import $ from "jquery";
@@ -69,43 +69,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
-// <nav className="navigation">
-    //   <div className="logo">
-    //     <Link to="/">
-    //       {/* <img src={NavLogo} alt="Oversight" /> */}
-    //     </Link>
-    //   </div>
-    //   <ul class="navLinks">
-    //     <li>
-    //       <a className="subMenu">
-    //         Home
-    //       </a>
-    //     </li>
-    //     <li>
-    //       <a href="/store">
-    //         Store
-    //       </a>
-    //     </li>
-    //     <li>
-    //       <a href="/courses">
-    //         Courses
-    //       </a>
-    //     </li>
-    //     <li>
-    //       <a href="/signup">
-    //         Sign Up
-    //       </a>
-    //     </li>
-    //     <span>|</span>
-    //     <li>
-    //       <a href="/login">
-    //         Login
-    //       </a>
-    //     </li>
-    //   </ul>
-    //   <div className="toggle">
-    //     <HiOutlineBars3BottomRight />
-    //   </div>
-    // </nav>

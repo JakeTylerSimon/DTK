@@ -69,12 +69,15 @@ nav.navigation {
   top: 0;
   opacity: 0.8;
   box-shadow: 1px 4px 25px black;
+  @media only screen and (max-width: 1000px) {
+    opacity: 1;
+  }
 
   .logo {
-      width: 215px;
+      width: 150px;
       height: 78px;
       img {
-          width: 174px;
+          width: 80px;
           height: 100%;
       }
       @media only screen and (min-width:1000px) {
@@ -334,7 +337,7 @@ nav.navigation{
             margin-top: 12px;
             margin-bottom: 14px;
             text-decoration: none;
-            color: #242424;
+            color: white;
             line-height: 40px;
             cursor: pointer;
           }
@@ -364,7 +367,7 @@ nav.navigation{
             font-weight: 400;
             font-size: 18px;
             line-height: 14px;
-            color: #6E6E6E;
+            color: white;
           }
           .authorDiv{
             margin-top: 20px;
@@ -548,17 +551,17 @@ h2{
 	margin-bottom: 10px;
 }
 
-h2:after{
-	content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-    background-color: teal;
-}
+// h2:after{
+// 	content: '';
+//     position: absolute;
+//     left: 50%;
+//     bottom: 0;
+//     transform: translateX(-50%);
+//     height: 4px;
+//     width: 50px;
+//     border-radius: 2px;
+//     background-color: teal;
+// }
 
 .field{
 	width: 90%;
@@ -659,17 +662,17 @@ h2{
 	margin-bottom: 10px;
 }
 
-h2:after{
-	content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-    background-color: teal;
-}
+// h2:after{
+// 	content: '';
+//     position: absolute;
+//     left: 50%;
+//     bottom: 0;
+//     transform: translateX(-50%);
+//     height: 4px;
+//     width: 50px;
+//     border-radius: 2px;
+//     background-color: teal;
+// }
 
 .field{
 	width: 90%;
@@ -770,17 +773,17 @@ h2{
 	margin-bottom: 10px;
 }
 
-h2:after{
-	content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-    background-color: teal;
-}
+// h2:after{
+// 	content: '';
+//     position: absolute;
+//     left: 50%;
+//     bottom: 0;
+//     transform: translateX(-50%);
+//     height: 4px;
+//     width: 50px;
+//     border-radius: 2px;
+//     background-color: teal;
+// }
 
 .field{
 	width: 90%;
@@ -836,9 +839,38 @@ textarea{
   padding: 75px 0;
   background: white;
 
-  h2 {
+  .price_details {
+    text-align: center;
+    padding-top: 75px;
+
+    &:after{
+      content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 50px;
+        border-radius: 2px;
+        background-color: teal;
+    }
+  }
+
+  .priceHeader {
     text-align: center;
     margin-bottom: 40px;
+
+    &:after{
+      content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 50px;
+        border-radius: 2px;
+        background-color: teal;
+    }
   }
 
     .price_content{
@@ -936,7 +968,7 @@ textarea{
   // box-shadow: 1px 1px 20px rgb(0 0 0 / 50%);
   width: 60%;
   margin: auto;
-  padding: 40px 20px;
+  padding: 75px 20px;
 
   h4 {
     color: white;
@@ -1001,7 +1033,19 @@ textarea{
 
       h2 {
         text-align: center;
-        // color: white;
+        margin-bottom: 40px;
+
+        &::after{
+          content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            height: 4px;
+            width: 50px;
+            border-radius: 2px;
+            background-color: teal;
+        }
       }
 
       p {
@@ -1039,12 +1083,21 @@ textarea{
 
       h2 {
         text-align: center;
-        // color: white;
+        margin-bottom: 40px;
+
+        &::after{
+          content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            height: 4px;
+            width: 50px;
+            border-radius: 2px;
+            background-color: teal;
+        }
       }
 
-      p {
-        // color: white;
-      }
     }
   }
 }
@@ -1058,6 +1111,18 @@ textarea{
   h2{
     text-align: center;
     margin-bottom: 40px;
+
+    &:after{
+      content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 50px;
+        border-radius: 2px;
+        background-color: teal;
+    }
   }
 
   .more {
@@ -1348,9 +1413,9 @@ footer {
           padding-bottom:16px;
       }
       .logo {
-          width: 174px;
+          width: 100px;
           img{
-            width: 50%;
+            width: 100%;
           }
           @media only screen and (max-width:1000px) {
               padding: 20px 0px;
@@ -1387,11 +1452,18 @@ footer {
       }
       .twitter{
           margin-left: 48px;
+          color: white;
+      }
+      .instagram{
+          color: white;
       }
       .socialLinks {
           ul {
                li {
                   margin-left: 42px;
+                  &:nth-child(1) {
+                    margin-left: 0;
+                  }
                   a {
                       &:hover {
                           img {
@@ -1464,7 +1536,7 @@ footer {
     flex-direction: row;
 
     background-color: white;
-    padding: 60px 20px;
+    padding: 75px 20px;
 }
 
 .pg {
@@ -1637,4 +1709,30 @@ footer {
         width: 150px;
     }
 
+}
+
+// Terms Page
+.terms_wrapper {
+  h2 {
+    text-align: center;
+    padding-top: 60px;
+  }
+  p {
+    color: white;
+    padding: 40px 50px;
+  }
+}
+
+// Accordian 
+.accordion {
+  max-width: 900px;
+  margin: auto;
+  margin-top: 75px;
+  // padding: 0 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--bs-accordion-active-color) !important;
+  background-color: white !important;
+  box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--bs-accordion-border-color);
 }

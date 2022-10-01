@@ -1,7 +1,7 @@
 import React from 'react'
 import Discord from '../images/discord.jpg'
 
-const special = () => {
+const Special = () => {
     return (
         <div className='special_wrapper'>
             <div className='special_content'>
@@ -10,18 +10,20 @@ const special = () => {
                 </div>
                 <div className='special'>
                     <h2>We operate on Discord</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit 
-                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                        occaecat cupidatat non proident, sunt in culpa qui officia 
-                        deserunt mollit anim id est laborum.</p>
+                    <p>This is where you will learn literally everything.
+                        We hold live training calls to help everyone in the group
+                        make money. We also have constant communication and collaberation
+                        to ensure everyone is getting the most quality for their time.
+                    </p>
+                         
+                    <p>There are channels and threads dedicated to each entreprenuerial interest
+                        that our members help coach and support one another as they learn and 
+                        dive into that field of work to ensure a better future for themselves and their family.
+                    </p>
                 </div>
             </div>
         </div>
       )
 }
 
-export default special
+export default Special

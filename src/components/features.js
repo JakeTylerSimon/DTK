@@ -4,7 +4,7 @@ import Software from '../images/software.png'
 import Ecom from '../images/ecom.png'
 import Realestate from '../images/realestate.png'
 
-const features = () => {
+const Features = () => {
   return (
     <div className='features_wrapper'>
         <h2>What we offer </h2>
@@ -73,4 +73,4 @@ const features = () => {
   )
 }
 
-export default features
+export default Features

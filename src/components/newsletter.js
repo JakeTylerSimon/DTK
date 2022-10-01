@@ -1,6 +1,6 @@
 import React from 'react'
 
-const newsletter = () => {
+const Newsletter = () => {
   return (
     <div className='news_wrapper'>
         <h4>Sign up for promos, announcements and more 🥳</h4>
@@ -13,4 +13,4 @@ const newsletter = () => {
   )
 }
 
-export default newsletter
+export default Newsletter

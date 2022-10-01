@@ -26,16 +26,6 @@ const Layout = ({ children }) => {
         <Header/>
         <main>{children}</main>
         <Footer />
-        {/* <footer
-          style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-          }}
-        >
-          © {new Date().getFullYear()} &middot; Built by
-          {` `}
-          <a href="https://www.Jakesimondev.com">Jake from DTK</a>
-        </footer> */}
       </div>
     </>
   )
