@@ -184,39 +184,205 @@ const PriceTable = () => {
 
         <Accordion defaultActiveKey={['0']} alwaysOpen>
             <Accordion.Item eventKey="0">
-                <Accordion.Header className='accordian'>Monthly Details</Accordion.Header>
+                <Accordion.Header className='accordian'>Monthly Details ⚫</Accordion.Header>
                 <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.
+                    <small className='price_small'>* What benefits come with the service</small>
+                    <h2 className='price_detail_header'>DTK Community Discord</h2>
+                    <div className='price_detail_content'>
+                        <ul className='price_content_content'> <b>Stay updated</b> 
+                            <li>Stock / Options Alerts</li>
+                            <li>Daily Watchlist</li>
+                            <li>Live Important News Alerts</li>
+                            <li>Analyst Ratings</li>
+                            <li>Option Updates</li>
+                            <li>Earnings Updates</li>
+                            <li>Daily / weekly Economic Calendar</li>
+                            <li>Updated Stock Upgrades / Downgrades</li>
+                        </ul>
+                        <ul className='price_content_content'> <b>Live Community Chat Lounges</b> 
+                            <li>Stocks - Options Chat</li>
+                            <li>Squeeze Plays</li>
+                            <li>NFT / Crypto</li>
+                            <li>Plus More...</li>
+                        </ul>
+                    </div>
+
+                    <div className='price_detail_content'>
+                        <ul className='price_content_content'> <b>Live Trading Alerts</b> 
+                            <li>Option Trade Alerts</li>
+                            <li>Small Account Alerts</li>
+                            <li>Small Cap / Shares Alerts</li>
+                            <li>Long Term Portfolio *Veryimportant*</li>
+                            <li>Member Trades</li>
+                        </ul>
+                        <ul className='price_content_content'> <b>Ai Alerts</b> 
+                            <li>Options AI</li>
+                            <li>Stock Breakouts</li>
+                            <li>Scalp Alerts</li>
+                            <li>Large Sweeps</li>
+                            <li>Block Trades</li>
+                            <li>Insider Trading</li>
+                            <li>Crypto Signal Bots</li>
+                            <li>Crypto Breakouts</li>
+                        </ul>
+                    </div>
+
+                    <div className='price_detail_content'>
+                        <ul className='price_content_content'> <b>Education / Tools</b> 
+                            <li>Trading Psychology</li>
+                            <li>Money Management</li>
+                            <li>Trading 101 / Basics</li>
+                            <li>Option Trading 101</li>
+                            <li>Day Trading 101</li>
+                            <li>Hundreds of Trading Books / Videos ($10,000 Value)</li>
+                        </ul>
+                        <ul className='price_content_content'> <b>DTK Voice Chat *Very important*</b> 
+                            <li>Come in and join Dp and the team as he Trades
+                                LIVE on Voice Chat... that's right, LIVE!
+                            </li>
+                            <li>The team is live on VC for an average of 2-4 hours</li>
+                            <li>This is the fastest way to not only get live trades but to learn with the team</li>
+                        </ul>
+                    </div>
+                    <b className='price_benefit'>Discounts on Workshops</b> <br/>
+                    <b className='price_benefit'>Discount on DTK Store</b>
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
-                <Accordion.Header className='accordian'>Yearly Details</Accordion.Header>
+                <Accordion.Header className='accordian'>Yearly Details 🔘</Accordion.Header>
                 <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.
+                <small className='price_small'>* What benefits come with the service</small>
+                    <h2 className='price_detail_header'>Discord Price Reduction</h2>
+                    <p className='discord_red'>$300 - $400 price reduction on the DTK Community Discord</p>
+                    <h2 className='price_detail_header'>DTK Community Discord</h2>
+                    <div className='price_detail_content'>
+                        <ul className='price_content_content'> <b>Stay updated</b> 
+                            <li>Stock / Options Alerts</li>
+                            <li>Daily Watchlist</li>
+                            <li>Live Important News Alerts</li>
+                            <li>Analyst Ratings</li>
+                            <li>Option Updates</li>
+                            <li>Earnings Updates</li>
+                            <li>Daily / weekly Economic Calendar</li>
+                            <li>Updated Stock Upgrades / Downgrades</li>
+                        </ul>
+                        <ul className='price_content_content'> <b>Live Community Chat Lounges</b> 
+                            <li>Stocks - Options Chat</li>
+                            <li>Squeeze Plays</li>
+                            <li>NFT / Crypto</li>
+                            <li>Plus More...</li>
+                        </ul>
+                    </div>
+
+                    <div className='price_detail_content'>
+                        <ul className='price_content_content'> <b>Live Trading Alerts</b> 
+                            <li>Option Trade Alerts</li>
+                            <li>Small Account Alerts</li>
+                            <li>Small Cap / Shares Alerts</li>
+                            <li>Long Term Portfolio *Veryimportant*</li>
+                            <li>Member Trades</li>
+                        </ul>
+                        <ul className='price_content_content'> <b>Ai Alerts</b> 
+                            <li>Options AI</li>
+                            <li>Stock Breakouts</li>
+                            <li>Scalp Alerts</li>
+                            <li>Large Sweeps</li>
+                            <li>Block Trades</li>
+                            <li>Insider Trading</li>
+                            <li>Crypto Signal Bots</li>
+                            <li>Crypto Breakouts</li>
+                        </ul>
+                    </div>
+
+                    <div className='price_detail_content'>
+                        <ul className='price_content_content'> <b>Education / Tools</b> 
+                            <li>Trading Psychology</li>
+                            <li>Money Management</li>
+                            <li>Trading 101 / Basics</li>
+                            <li>Option Trading 101</li>
+                            <li>Day Trading 101</li>
+                            <li>Hundreds of Trading Books / Videos ($10,000 Value)</li>
+                        </ul>
+                        <ul className='price_content_content'> <b>DTK Voice Chat *Very important*</b> 
+                            <li>Come in and join Dp and the team as he Trades
+                                LIVE on Voice Chat... that's right, LIVE!
+                            </li>
+                            <li>The team is live on VC for an average of 2-4 hours</li>
+                            <li>This is the fastest way to not only get live trades but to learn with the team</li>
+                        </ul>
+                    </div>
+                    <b className='price_benefit'>Discounts on Workshops</b> <br/>
+                    <b className='price_benefit'>Discount on DTK Store</b> <br/>
+                    <b className='price_benefit'>Monthly Coaching Calls</b>
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="2">
-                <Accordion.Header className='accordian'>Life Time Details</Accordion.Header>
+                <Accordion.Header className='accordian'>Life Time Details 📀</Accordion.Header>
                 <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.
+                <small className='price_small'>* What benefits come with the service</small>
+                    <h2 className='price_detail_header'>Discord Price Reduction</h2>
+                    <p className='discord_red'>Workshops are 100% free</p>
+                    <p className='discord_red'>DTK store is 50% off</p>
+                    <h2 className='price_detail_header'>DTK Community Discord</h2>
+                    <div className='price_detail_content'>
+                        <ul className='price_content_content'> <b>Stay updated</b> 
+                            <li>Stock / Options Alerts</li>
+                            <li>Daily Watchlist</li>
+                            <li>Live Important News Alerts</li>
+                            <li>Analyst Ratings</li>
+                            <li>Option Updates</li>
+                            <li>Earnings Updates</li>
+                            <li>Daily / weekly Economic Calendar</li>
+                            <li>Updated Stock Upgrades / Downgrades</li>
+                        </ul>
+                        <ul className='price_content_content'> <b>Live Community Chat Lounges</b> 
+                            <li>Stocks - Options Chat</li>
+                            <li>Squeeze Plays</li>
+                            <li>NFT / Crypto</li>
+                            <li>Plus More...</li>
+                        </ul>
+                    </div>
+
+                    <div className='price_detail_content'>
+                        <ul className='price_content_content'> <b>Live Trading Alerts</b> 
+                            <li>Option Trade Alerts</li>
+                            <li>Small Account Alerts</li>
+                            <li>Small Cap / Shares Alerts</li>
+                            <li>Long Term Portfolio *Veryimportant*</li>
+                            <li>Member Trades</li>
+                        </ul>
+                        <ul className='price_content_content'> <b>Ai Alerts</b> 
+                            <li>Options AI</li>
+                            <li>Stock Breakouts</li>
+                            <li>Scalp Alerts</li>
+                            <li>Large Sweeps</li>
+                            <li>Block Trades</li>
+                            <li>Insider Trading</li>
+                            <li>Crypto Signal Bots</li>
+                            <li>Crypto Breakouts</li>
+                        </ul>
+                    </div>
+
+                    <div className='price_detail_content'>
+                        <ul className='price_content_content'> <b>Education / Tools</b> 
+                            <li>Trading Psychology</li>
+                            <li>Money Management</li>
+                            <li>Trading 101 / Basics</li>
+                            <li>Option Trading 101</li>
+                            <li>Day Trading 101</li>
+                            <li>Hundreds of Trading Books / Videos ($10,000 Value)</li>
+                        </ul>
+                        <ul className='price_content_content'> <b>DTK Voice Chat *Very important*</b> 
+                            <li>Come in and join Dp and the team as he Trades
+                                LIVE on Voice Chat... that's right, LIVE!
+                            </li>
+                            <li>The team is live on VC for an average of 2-4 hours</li>
+                            <li>This is the fastest way to not only get live trades but to learn with the team</li>
+                        </ul>
+                    </div>
+                    <b className='price_benefit'>Discounts on Workshops</b> <br/>
+                    <b className='price_benefit'>Discount on DTK Store</b> <br/>
+                    <b className='price_benefit'>Monthly Coaching Calls</b>
                 </Accordion.Body>
             </Accordion.Item>
         </Accordion>

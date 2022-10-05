@@ -30,35 +30,25 @@ const Header = () => {
       </div>
       <ul className="navLinks">
         <li>
-          {/* <Link to="/"> */}
           <a href="/">Home</a>
             
-          {/* </Link> */}
         </li>
         <li>
-          {/* <Link to="/store"> */}
           <a href="/store">Store</a>
             
-          {/* </Link> */}
         </li>
         <li>
-          {/* <Link to="/courses"> */}
           <a href="/courses">Courses</a>
             
-          {/* </Link> */}
         </li>
         <li>
-          {/* <Link to="/signup"> */}
           <a href="/signup" style={{pointerEvents: "none", color: 'grey'}}>Sign Up</a>
-          {/* </Link> */}
+         
         </li>
 
-        {/* <span>|</span> */}
         <li>
-          {/* <Link to="/login"> */}
           <a href="/login" style={{pointerEvents: "none", color: 'grey'}}>Login</a>
              
-          {/* </Link> */}
         </li>
       </ul>
       <div className="toggle">

@@ -880,17 +880,17 @@ textarea{
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: center;
-      background: black;
+      // background: black;
 
       .single-price {
           width: 33%;
-          box-shadow: 1px 4px 25px teal;
+          box-shadow: 1px 4px 25px grey;
           text-align: center;
           transition: 0.9s; 
 
           h1 {
               font-size: 18px;
-              color: #fff;
+              // color: #fff;
               line-height: 3;
               text-transform: uppercase;
           }
@@ -905,7 +905,7 @@ textarea{
 
               h3 {
                   font-size: 38px;
-                  color: #fff;
+                  // color: #fff;
                   margin-top: revert;
               }
           }
@@ -1735,4 +1735,41 @@ footer {
   color: var(--bs-accordion-active-color) !important;
   background-color: white !important;
   box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--bs-accordion-border-color);
+}
+
+//Price Details 
+.price_detail_header {
+  text-align: center;
+  
+  &:after{
+    content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      height: 4px;
+      width: 50px;
+      border-radius: 2px;
+      background-color: teal;
+  }
+}
+
+.price_detail_content {
+  display: flex;
+  justify-content: space-between;
+}
+.price_benefit {
+  display: flex;
+    justify-content: center;
+}
+
+.price_content_content {
+  width: 50%;
+  margin-left: 50px;
+}
+
+.discord_red {
+  text-align: center;
+  padding-bottom: 20px;
+
 }
